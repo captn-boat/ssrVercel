@@ -1,0 +1,12 @@
+$headings-font-weight: 800;
+@import "bootstrap/scss/bootstrap";
+
+.page-container {
+  padding-top: 60px;
+  @extend .container;
+  max-width: 720px;
+
+  h1 {
+    font-size: 40px;
+  }
+}

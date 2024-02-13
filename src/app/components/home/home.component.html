@@ -1,0 +1,11 @@
+<div class="text-center py-5">
+  <h1>IA Blog</h1>
+  <p>Les dernières actualités de l'intelligence artificielle.</p>
+</div>
+
+<h2>Articles</h2>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-4" *ngFor="let article of articles">
+    <app-article-card [article]="article"></app-article-card>
+  </div>
+</div>

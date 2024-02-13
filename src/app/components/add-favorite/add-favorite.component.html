@@ -1,0 +1,8 @@
+<button class="btn btn-sm btn-primary" *ngIf="isFavorite();else notFavorite"
+        (click)="removeFavorite();$event.stopPropagation()">Favoris
+</button>
+<ng-template #notFavorite>
+  <button class="btn btn-sm btn-outline-secondary" (click)="addFavorite();$event.stopPropagation()">Ajouter aux
+    favoris
+  </button>
+</ng-template>

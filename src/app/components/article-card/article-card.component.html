@@ -1,0 +1,8 @@
+<div class="card mb-3" [routerLink]="['/articles', article.url]" *ngIf="article">
+  <img [src]="article.imageUrl" class="card-img-top" [alt]="article.imageAlt">
+  <div class="card-body">
+    <h2 class="card-title h5">{{article.title}}</h2>
+    <div class="card-text mb-2">{{article.description}}</div>
+    <app-add-favorite [article]="article" class="d-flex justify-content-end"></app-add-favorite>
+  </div>
+</div>
