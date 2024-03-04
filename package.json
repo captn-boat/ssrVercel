@@ -11,7 +11,8 @@
     "serve:ssr": "node dist/angular-seo-course-front/server/main.js",
     "build:ssr": "ng build && ng run angular-seo-course-front:server",
     "prerender": "ng run angular-seo-course-front:prerender",
-    "heroku-postbuild": "npm run build:ssr"
+    "heroku-postbuild": "npm run build:ssr",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
