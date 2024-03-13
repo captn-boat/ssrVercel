@@ -6,7 +6,7 @@
     { "source": "/(.*)", "destination": "/api" }
   ],
   "functions": {
-    "server.ts": {
+    "api/index.js": {
       "includeFiles": "dist/angular-seo-course-front/browser/**"
     }
   }
