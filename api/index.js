@@ -1,6 +1,4 @@
-async function loadServer() {
-  const serverModule = await import('../dist/angular-seo-course-front/server/main');
-  return serverModule.app;
-}
+const server = require('../dist/angular-seo-course-front/server/main');
 
-export default loadServer().then(app => app());
+module.exports = server.app();
+
